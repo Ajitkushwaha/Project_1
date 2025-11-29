@@ -1,1 +1,18 @@
-
+datasage-agent/
+├── README.md               # Project overview, setup instructions, and demo
+├── requirements.txt        # Python dependencies (pandas, matplotlib, agents-python-sdk)
+├── src/
+│   ├── main.py            # Main application entry point and agent orchestration
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── data_engineer_agent.py
+│   │   ├── data_analyst_agent.py
+│   │   └── insight_strategist_agent.py
+│   ├── tools/
+│   │   ├── __init__.py
+│   │   ├── data_tools.py   # Custom tools: load_csv_tool, data_quality_check_tool
+│   │   └── visualization_tools.py # Custom tool: generate_plot_tool
+│   └── session_manager.py  # Handles InMemorySessionService
+├── data/
+│   └── sample_sales_data.csv # A sample dataset for testing
+└── outputs/                # Directory where generated reports and charts are saved
